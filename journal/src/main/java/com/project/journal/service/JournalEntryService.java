@@ -30,7 +30,7 @@ public class JournalEntryService {
             user.getJournalEntries().add(saved);
             userService.saveEntry(user);
         } catch (Exception e) {
-            System.out.println(e);
+            System.out.println("Error Hit");
             throw new RuntimeException(e);
         }
     }
